@@ -1,5 +1,82 @@
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.input_icon { 
+    background: none !important;
+}
+.shipping_content, .email_phone {
+    display: grid;
+    gap: 1rem;
+}
+label {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+input, select {
+    font-size: .9rem !important;
+}
+.continue_btn {
+    font-weight: 500;
+    color: white;
+    background: #F2994A;
+    padding: .7rem 2rem;
+}
+.card-price p {
+    font-weight: bold;
+    color: #F2994A;
+}
+p.line-through {
+    color: #4E5150;
+    text-decoration: line-through;
+    font-size: .8em;
+}
+.card-price {
+    gap: 1rem;
+}
+.quantity {
+    padding: .5rem;
+    border: 1px solid #828282;
+    border-radius: 12px;
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.quantity a {
+    font-size: 1rem;
+    color: #262626;
+    background: #E0E0E0;
+    padding: .2rem;
+    border-radius: 7px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.status_wrapper {
+    background: #F2F2F2;
+    width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+    .main_content {
+        display: flex;
+        flex-direction: column-reverse;
+    
+    }
+    .status_wrapper {
+        width: 100% !important;
+    }
 }
